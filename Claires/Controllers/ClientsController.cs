@@ -16,7 +16,7 @@ namespace Claires.Controllers
     }
     public ActionResult Details(int id)
     {
-      Client thisClient = _db.Clients.FirstOrDefault(donations => donations.DonationId == id);
+      Client thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
       return View(thisClient);
     }
     public ActionResult Create()
@@ -51,7 +51,7 @@ namespace Claires.Controllers
       return RedirectToAction("Index");
     }
     [HttpPost]
-    public ActionResult Create(Client client1)
+    public ActionResult Create(Client client)
     {
       _db.Clients.Add(client);
       _db.SaveChanges();
