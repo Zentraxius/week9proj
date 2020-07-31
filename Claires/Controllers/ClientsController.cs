@@ -14,27 +14,32 @@ namespace Claires.Controllers
     {
       _db = db;
     }
+    ////////
     public ActionResult Details(int id)
     {
       Client thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
       return View(thisClient);
     }
+    ////////
     public ActionResult Create()
     {
       ViewBag.StylistsId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View();
     }
+    ////////
     public ActionResult Edit(int id)
     {
       var thisClient = _db.Clients.FirstOrDefault(Clients => Clients.ClientId == id);
       ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View(thisClient);
     }
+    ////////
     public ActionResult Delete(int id)
     {
       var thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
       return View(thisClient);
     }
+    ////////
     [HttpPost, ActionName("Delete")]
     public ActionResult DeleteConfirmed(int id)
     {
@@ -43,6 +48,7 @@ namespace Claires.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+    ////////
     [HttpPost]
     public ActionResult Edit(Client client)
     {
@@ -50,6 +56,7 @@ namespace Claires.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+    ////////
     [HttpPost]
     public ActionResult Create(Client client)
     {
@@ -57,6 +64,7 @@ namespace Claires.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+    ////////
     public ActionResult Index()
     {
       List<Client> model = _db.Clients.Include(clients => clients.Stylist).ToList();
