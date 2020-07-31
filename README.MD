@@ -3,7 +3,7 @@
 #### A quick website for Claire to help make their job easier
 
 #### By Cody Fritz_
-[Non-Profit-Solution](https://github.com/Zentraxius/week9proj)
+[Claires-Solution](https://github.com/Zentraxius/week9proj)
 
 ## Description
 
@@ -23,7 +23,7 @@ A website specially made for Eau Claire's Salon, to help manage their Stylists a
 * Run `dotnet add package Microsoft.EntityFrameworkCore -v 2.2.0`  &
 `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 2.2.0`
 in the terminal
-* Add a file called `appsetting.json` in the NonProfit directory.
+* Add a file called `appsetting.json` in the Claires directory.
 * In `appsetting.json` add ![appsetting.json](Assets/setup.png)
 * Fill in your `server`, `port`,`database`,`uid`, and `pwd`
 
