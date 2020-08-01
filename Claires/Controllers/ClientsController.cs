@@ -17,7 +17,7 @@ namespace Claires.Controllers
     ////////
     public ActionResult Details(int id)
     {
-      Client thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
+      Client thisClient = _db.Clients.Include(Client => Client.Stylist).FirstOrDefault(clients => clients.ClientId == id);
       return View(thisClient);
     }
     ////////
