@@ -23,7 +23,7 @@ namespace Claires.Controllers
     ////////
     public ActionResult Create()
     {
-      ViewBag.StylistsId = new SelectList(_db.Stylists, "StylistId", "Name");
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View();
     }
     ////////
