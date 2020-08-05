@@ -4,11 +4,11 @@
 
 #### By Cody Fritz\_
 
-[Claires-Solution](https://github.com/Zentraxius/week9proj)
+[HairSalon-Solution](https://github.com/Zentraxius/week9proj)
 
 ## Description
 
-A website specially made for Eau Claire's Salon, to help manage their Stylists and their Clients.
+A website specially made for Eau Claire's Salon, to help manage their Stylists and their Clients. 
 
 ## Setup/Installation Requirements
 
@@ -19,12 +19,12 @@ A website specially made for Eau Claire's Salon, to help manage their Stylists a
 - Then install dotnet script REPL by typing 'dotnet tool installl -g dotnet-script' in the command line
 - Type dotnet build in the command line to compile the code
 - Create a .gitignore file and store the bin and obj folders in .gitignore
-- Type dotnet run in the command line to run the program, ensuring you are in the hairsalon.solution/claires directory
+- Type dotnet run in the command line to run the program, ensuring you are in the hairsalon.solution/HairSalon directory
 
 - Run `dotnet add package Microsoft.EntityFrameworkCore -v 2.2.0` &
   `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 2.2.0`
   in the terminal
-- Add a file called `appsetting.json` in the Claires directory.
+- Add a file called `appsetting.json` in the HairSalon directory.
 - In `appsetting.json` add ![appsetting.json](Assets/setup.png)
 - Fill in your `server`, `port`,`database`,`uid`, and `pwd`
 
@@ -52,7 +52,7 @@ PRIMARY KEY (`StylistId`)
 ## Importing the provided Database
 
 0. These instructions are assuming you have already downloaded the project and can open it in a proper editor such as VisualStudioCode
-1. Copy the file cody_fritz.sql from the hairsalon.solution/claires/cody_fritz.sql location
+1. Copy the file cody_fritz.sql from the hairsalon.solution/HairSalon/cody_fritz.sql location
 2. Place in easily accessible folder of your choice, in this example we will use desktop
 3. Open a database manager, in this case we will use MySql Workbench
 4. From the "Navigator" tab, and the "Administration" sub-tab, we will click on Data Import/Restore
